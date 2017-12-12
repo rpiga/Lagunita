@@ -1,2 +1,2 @@
 # Lagunita
-Stanford Lagunita Algorithms Desgin &amp; Analysis materials
+Stanford Lagunita Algorithms Design &amp; Analysis materials
