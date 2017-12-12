@@ -43,7 +43,7 @@ x 5678
 
 ### Karatsuba Multiplication
 
-- With same example as before, let’s check a different approach in order to understand if there’s a more effective way to perform the calculation
+- With same example as before, let’s check a different approach in order to understand if ==there’s a more effective way to perform the calculation==
 
 ```markdown
   5678
@@ -96,7 +96,7 @@ R4 = R3 - R1 - R2 = 2840
 ```
 
 - At the end we’ll have 3 recursive multiplications and some additions
-  $$x*y = 10^nAC + 10^{\frac{n}{2}}(A+B)*(C+D) + BD$$
+  - $$x*y = 10^nAC + 10^{\frac{n}{2}}(A+B)*(C+D) + BD$$
 
 ### Merge Sort Algorithm
 - Why start with Merge Sort?
@@ -123,9 +123,9 @@ ASSUME: numbers are distinct, no duplicates
 **Pseudocode**
 
 - In order to obtain the result we have to
-- Recursively sort 1st half
-- Recursively sort 2nd half
-- merge the two sorted sublists
+  - Recursively sort 1st half
+  - Recursively sort 2nd half
+  - merge the two sorted sublists
 
 ```markdown
 C = output array [length n]
@@ -171,10 +171,10 @@ for k = 1 to n  **#1**
 - each sub-level will have $$2^{level}$$ sub-problems with $$n/2^j$$ elements each
 - So total numbers of operations at level j
   - $$\leq2^j * 6n$$  [6n as from previous demonstration]
-    $$\leq 2^j * 6 * n/2^j$$  [number of subproblems * number of elements in each subproblem]
-    $$\leq 6n$$  [number of operations for just one level]
+  - $$\leq 2^j * 6 * n/2^j$$  [number of subproblems * number of elements in each subproblem]
+  - $$\leq 6n$$  [number of operations for just one level]
 - Total operations for all levels
   - $$\leq 6n * (\log_2 n + 1)$$  [number of operations in one level * number of levels]
-    $$\leq 6n*\log_2 n + 6n$$  [as we claim above]
+  - $$\leq 6n*\log_2 n + 6n$$  [as we claim above]
 
 
