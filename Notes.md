@@ -178,3 +178,20 @@ for k = 1 to n  **#1**
   - $$\leq 6n*\log_2 n + 6n$$  [as we claim above]
 
 
+### Guiding Principles
+1. Worst case analysis: will apply to all cases for any input of length n (general purpose)
+  - opposed to
+    - "average case" analysis
+    - benchmarks
+  - that requires domain knowledge
+2. Won't pay much attention to constant factors, lower-orders terms
+  - Simplify the analysis
+  - Constants depends on hardware we're using (architecture, compiler, ...)
+  - We'll lose very little predictive power
+    - Algorithm will allways be fast or slow 
+3. Asymptotic Analysis
+  - Focus on running time for large sizes of $$n$$
+    - Saying Merge Sort ( $$\leq 6n * \log_2 n + 6n$$ ) is better than insertion sort ( $$1/2 * n^2$$ ) makes sense for large amounts of $$n$$
+
+
+
